@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Incident 2018">
+    <meta name="author" content="Incident 2018 Website Team">
+
+    <title>Incident 2018</title>
+
+    <link rel="shortcut icon" href="{% static 'images/inci-logo.png' %}">
+
+    <!-- Stylesheet -->
+    <link href="{% static 'css/base-materialize.min.css' %}" rel="stylesheet">
+
+    <!--link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-materialize.min.css?11916905338055449107" rel="stylesheet"-->
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    {% block head_block %}  <!-- head block starts here -->               
+                 
+    {% endblock %} <!-- head block ends here -->
+</head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="n">
+      <div class="nav-wrapper">
+        <a href="{% url 'base:index' %}" class="brand-logo"><img src='{% static 'images/inci-logo-black.png' %}' height="42" align="middle"></a>
+        <ul id="nav-mobile" class="ag hide-on-med-and-down">
+          <li><a href="startup-blog.html">SPONSORS</a></li>
+          <li><a href="{% url 'base:team' %}">TEAM</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
+      </div>
+    </nav>
+    <ul id="slide-out" class="side-nav">
+      <li><a class="waves-effect waves-teal" href="startup-blog.html">SPONSORS</a></li>
+      <li><a class="waves-effect waves-teal" href="{% url 'base:team' %}">TEAM</a></li>
+    </ul>
+
+    {% block body_block %}  <!-- body block starts here -->               
+                 
+    {% endblock %} <!-- body block ends here -->    
+    
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="dv">
+        <div class="c">
+          <div class="d ka ko">
+            <img src='{% static 'images/inci-logo-black.png' %}' height="42" align="middle">
+            <p>Made by Incident Website Team</p>
+          </div>
+          <div class="d ka ko">
+            <ul>
+              <li><a target="_blank" href="https://www.twitter.com/incident_nitk"><h1><i class="icon-twitter"></i></h1></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/incidenttheofficialpage/"><h1><i class="icon-facebook"></i></h1></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/user/nitkincident"><h1><i class="icon-youtube"></i></h1></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-all-min.js?11916905338055449107" crossorigin="anonymous"></script>
+
+  </body>
+</html>
