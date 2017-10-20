@@ -19,14 +19,14 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    {% block head_block %}  <!-- head block starts here -->               
+    {% block head %}  <!-- head block starts here -->               
                  
     {% endblock %} <!-- head block ends here -->
 </head>
 
   <body>
 
-    <!-- Navbar -->
+    <!-- Navbar 
     <nav class="n">
       <div class="nav-wrapper">
         <a href="{% url 'base:index' %}" class="brand-logo"><img src='{% static 'images/inci-logo-black.png' %}' height="42" align="middle"></a>
@@ -41,8 +41,8 @@
       <li><a class="waves-effect waves-teal" href="{% url 'base:sponsors' %}">SPONSORS</a></li>
       <li><a class="waves-effect waves-teal" href="{% url 'base:team' %}">TEAM</a></li>
     </ul>
-
-    {% block body_block %}  <!-- body block starts here -->               
+    -->
+    {% block body %}  <!-- body block starts here -->               
                  
     {% endblock %} <!-- body block ends here -->    
     
