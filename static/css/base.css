@@ -1,0 +1,28 @@
+.divnav {
+	width: 30%;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	margin: 0 auto;	
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+
+.navbar-brand {
+	float:none;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	font-size: 30px;
+}

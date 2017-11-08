@@ -8,16 +8,50 @@
 {% endblock %}
 
 {% block body %}
-
+<!-- 
 <div class="jumbotron" id="cover">
     <video id="video-background" preload autoplay>
-      <source src="{% static 'videos/cover_video.mp4' %}" type="video/mp4" />
-      Video cannot be played by your browser
+        <source src="{% static 'videos/cover_video.mp4' %}" type="video/mp4" />
+        Video cannot be played by your browser
     </video>
-  </div>
+</div> -->
 
-<div class="container-fluid">
-  
+<!-- <div class="container-fluid">
+  <video id="video-background" preload autoplay>
+    <source src="{% static 'videos/cover_video.mp4' %}" type="video/mp4" />
+    Video cannot be played by your browser
+    </video>
+</div> -->
+
+<!-- <div id="player-overlay">
+    <video autoplay preload muted>
+        <source src="{% static 'videos/cover_video.mp4' %}" type=video/mp4>
+    </video>
+</div> -->
+
+<div class="video-container">
+  <video autoplay loop muted id="video-bg">
+    <source src="{% static 'videos/cover_video.mp4' %}" type="video/mp4" />
+  </video>
+</div>
+
+<div class="container-fluid" style="background-color: black; margin-top: 0;">
+  <div class="row" style="text-align: center; color: white;">
+    <div class="col-md-12">
+      <h1 style="font-family: 'Amatic SC', cursive; font-weight: bold; font-size: 60px;">Incident 2018<br/><small>A Cultural Extravaganza.</small></h1>
+    </div>    
+  </div>
+  <div class="row" style="text-align: center; color: white;">
+    <div class="col-md-4">
+      <h1>Footfall</h1>
+    </div>
+    <div class="col-md-4">
+      <h1>fjsfs</h1>
+    </div>
+    <div class="col-md-4">
+      <h1>fjsfs</h1>
+    </div>
+  </div>
 </div>
 
 
